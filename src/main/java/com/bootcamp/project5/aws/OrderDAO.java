@@ -17,7 +17,8 @@ public class OrderDAO {
                 new Order(102, "Mouse", 1, 20),
                 new Order( 103, "Keyboard",1, 150 ),
                 new Order(  104, "Computer", 1, 1200),
-                new Order(  105 , "HDMI cable", 3, 25 )
+                new Order(  105 , "HDMI cable", 3, 25 ),
+                new Order(  106 , "Microcontroller", 1, 125 )
         ).collect(Collectors.toList());
     }
 }
