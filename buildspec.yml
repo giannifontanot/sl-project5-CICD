@@ -3,5 +3,22 @@ version: 0.2
 phases:
   build:
     commands:
+      - echo -----------------------
+      - echo -----------------------
       - echo Build started on `date`
+      - echo -----------------------
+      - echo -----------------------
+      - mvn clean package
+      - echo -----------------------
+  post_build:
+    commands:
+      - echo -----------------------
+      - echo -----------------------
+      - echo Build completed successfully
+      - echo -----------------------
+      - echo -----------------------
+  artifacts:
+    files:
+      - target/sl-project5-CICD.jar
+    discard-paths: yes
 
